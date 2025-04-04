@@ -1,0 +1,133 @@
+$primary-color: #ddd;
+$dark-gray: #333;
+$light-gray: #777;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.contact--page {
+  p {
+    padding: 0 30px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}
+.my-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 0;
+  border: 2px solid #ccc;
+  margin: 20px;
+  border-radius: 5px;
+  a {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+.full-page {
+  display: flex;
+}
+.side-menu {
+  width: 240px;
+  box-shadow: 2px 0px 9px #0000006b;
+  min-height: 100vh;
+  background: #e8e8e8;
+  .side-logo {
+    h2 {
+      color: $dark-gray;
+      text-align: center;
+      padding: 15px 0;
+      font-weight: 900;
+    }
+  }
+}
+.owner-info {
+  padding: 0 15px;
+}
+.side-content {
+  margin-top: 15px;
+}
+.detail-box {
+  padding: 20px 0;
+  p {
+    padding: 5px 0;
+    font-weight: 300;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+.page {
+  width: calc(100% - 240px);
+  h1 {
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    background: #4c4c4c;
+    color: #fff;
+  }
+}
+
+.mint-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  flex-direction: column;
+  p {
+    font-size: 28px;
+    font-weight: 300;
+    padding: 15px 0;
+    span {
+      font-weight: 900;
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 100000;
+  position: fixed;
+  background: #3e3e3ee3;
+  width: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.loading.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.2s;
+}
+.my-nfts-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.empty-items {
+  margin: 20px;
+  padding: 25px;
+  border: 1px solid #d60101;
+  background: #ffc6c6;
+  color: #000;
+}
+.card-ribbon {
+  font-size: 15px;
+  font-weight: 800;
+  margin-left: 10px;
+  color: purple;
+}
